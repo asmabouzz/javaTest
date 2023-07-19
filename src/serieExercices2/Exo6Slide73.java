@@ -17,78 +17,43 @@ public class Exo6Slide73 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("saisir un mois : ");
         mois = scanner.nextInt();
+        String returnedValue ="";
 
 
         switch (mois) {
-            case 1:
-                System.out.println("31");
-                break;
-            case 2:
+            case 1,3,5,7,8,10,12 -> returnedValue = "31";
+                //System.out.println("31");
+                //break;
+            case 2 -> {
                 System.out.print("Entrez une année: ");
                 int year = scanner.nextInt();
                 boolean b = false;
-                if(year % 400 == 0)
-                {
+                if (year % 400 == 0) {
                     b = true;
-                }
-                else if (year % 100 == 0)
-                {
+                } else if (year % 100 == 0) {
+                    b = false;
+                } else if (year % 4 == 0) {
+                    b = true;
+                } else {
                     b = false;
                 }
-                else if(year % 4 == 0)
-                {
-                    b = true;
-                }
-                else
-                {
-                    b = false;
-                }
-                if(b == true)
-                {
-                    System.out.println("29");
-                }
-                else
-                {
-                    System.out.println("28");
+                if (b == true) {
+                    returnedValue="29";
+                } else {
+                    returnedValue="28";
                 }
 
                 break;
-            case 3:
-                System.out.println("31");
-                break;
-            case 4:
-                System.out.println("30");
-                break;
-            case 5:
-                System.out.println("31");
-                break;
-            case 6:
-                System.out.println("30");
-                break;
-            case 7:
-                System.out.println("31");
-                break;
-            case 8:
-                System.out.println("31");
-                break;
-            case 9:
-                System.out.println("30");
-                break;
-            case 10:
-                System.out.println("31");
-                break;
-            case 11:
-                System.out.println("30");
-                break;
-            case 12:
-                System.out.println("31");
-                break;
+            }
+            case 4,6,9,11 -> returnedValue="30";
+                //System.out.println("30");
 
-            default:
-                System.out.println("Choix incorrect");
+
+            default -> returnedValue="Choix incorrect";
+               // System.out.println("Choix incorrect");
         }
 
-
+        System.out.println(returnedValue);
 
     }
 }

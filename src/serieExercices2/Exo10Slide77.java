@@ -13,9 +13,7 @@ public class Exo10Slide77 {
         3. Afficher un message pour chaque condition non respectée
          */
 
-        int minAge = 30;
-        int maxSalaire = 40000 ;
-        int minExperiance=5;
+
         Scanner scanner = new Scanner(System.in);
         System.out.print("Entrez l'age : ");
         int age = scanner.nextInt();
