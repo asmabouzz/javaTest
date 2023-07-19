@@ -33,6 +33,7 @@ public class Exo16Slide83 {
 
         int petit=21;
         int grand=notes[1];
+        int moyenne=0;
 
         for (int i=0;i<=notes.length-1;i++){
 
@@ -43,8 +44,10 @@ public class Exo16Slide83 {
             }
             }
 
+
         System.out.println("le plus petit est : "+petit);
         System.out.println("le plus grand est : "+grand);
+
     }
 
 }

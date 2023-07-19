@@ -33,7 +33,7 @@ public class Exo10Slide77 {
           System.out.println("Vous manquez d'expérience");
       }
 
-      if (age>30 && salaire <= 40000 && experience>=5){
+      if (age>30 && salaire <= 40000 && experience>=5 ){
           System.out.println("votre condidature est retenue");
       }
 
