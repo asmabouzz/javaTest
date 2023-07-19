@@ -24,12 +24,16 @@ public class Exo10Slide77 {
 
       if(age<30){
           System.out.println("Vous êtes trop jeune");
-      }else if (salaire>40000){
+      }
+      if (salaire>40000){
           System.out.println("Vous êtes trop chere");
 
-      }else if (experience<5){
+      }
+      if (experience<5){
           System.out.println("Vous manquez d'expérience");
-      }else{
+      }
+
+      if (age>30 && salaire <= 40000 && experience>=5){
           System.out.println("votre condidature est retenue");
       }
 
