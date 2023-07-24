@@ -5,14 +5,14 @@ import java.util.Scanner;
 public class ExoTab4Slide97 {
     public static void main(String[] args) {
 
-        int[] tab1 = new int[5];
-        int[] tab2 = new int[5];
+        int[] tab1 = {5,8,9,2,6};
+        int[] tab2 = {4,5,6};
         int i,j;
         boolean verif=false;
 
 
         //remplissage tableau
-        Scanner scanner = new Scanner(System.in);
+       Scanner scanner = new Scanner(System.in);
         System.out.println("saisir les chiffres du tableau1");
         for (i = 0; i <= tab1.length - 1; i++) {
             tab1[i] = scanner.nextInt();
@@ -36,7 +36,7 @@ public class ExoTab4Slide97 {
         System.out.println();
 
         if (tab1.length != tab2.length){
-            System.out.println("les tableaux ne sont pas égaux");
+            verif=false;
         }else {
                for (i = 0; i <= tab1.length - 1; i++) {
                    if (tab1[i]==tab2[i]){
