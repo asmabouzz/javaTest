@@ -37,16 +37,20 @@ public class Exo16Slide83 {
 
         for (int i=0;i<=notes.length-1;i++){
 
+
             if (notes[i]<petit){
                 petit=notes[i];
             }else if(notes[i]>grand){
                 grand=notes[i];
             }
+            moyenne += notes[i];
             }
 
+        moyenne = moyenne/ nbrN;
 
         System.out.println("le plus petit est : "+petit);
         System.out.println("le plus grand est : "+grand);
+        System.out.println("la moyenne est : "+moyenne);
 
     }
 
