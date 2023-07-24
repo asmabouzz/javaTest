@@ -28,8 +28,6 @@ public class Exo17Slide84 {
             }
 
         }
-
-
             if(cpt==2){
 
             System.out.println(nbr+" est premier");
